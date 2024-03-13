@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/src/features/activity/screens/activities_page.dart';
-import 'package:flutter_application_1/src/features/cart/screens/cart_page.dart';
-import 'package:flutter_application_1/src/features/user/screens/user_informations.dart';
+import 'package:sharing_ativities/src/features/activity/screens/activities_page.dart';
+import 'package:sharing_ativities/src/features/cart/screens/cart_page.dart';
+import 'package:sharing_ativities/src/features/user/screens/user_informations.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 Future<Map<String, String?>> getData() async {

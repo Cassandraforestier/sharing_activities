@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/src/features/activity/screens/activities_page.dart';
-import 'package:flutter_application_1/src/features/authentication/controllers/authentication_controller.dart';
+import 'package:sharing_ativities/src/features/activity/screens/activities_page.dart';
+import 'package:sharing_ativities/src/features/authentication/controllers/authentication_controller.dart';
 
 class LoginPage extends StatefulWidget {
   @override

@@ -1,5 +1,7 @@
 # Sharing Activities
 
+![image](frontend/assets/logo.png)
+
 ## Introduction
 Sharing Activities est une application qui permet de découvrir et participer à des activités de groupe. 
 Ce Readme fournit des informations sur l'architecture, les fonctionnalités et le développement de l'application Sharing Activities.
@@ -19,7 +21,7 @@ sharing_activities/
 ├── backend/ # Dossier du back-end du projet
 | ├── app.js
 | ├── features/ # Logique de structure séparée en fonctionnalités
-│ | ├── activity/ # Chaque fonctionnalité contient 3 fichiers : controller, model et route
+│ | ├── activity/ 
 │ | | ├── activity.controller.js
 │ | | ├── activity.model.js
 │ | | └── activity.route.js
@@ -31,7 +33,7 @@ sharing_activities/
 | | ├── src/
 | | │ ├── features/ # Logique de structure séparée en fonctionnalités
 | | | │ ├── activity/
-| | | │ ├── authentication/ # Chaque fonctionnalité contient 3 dossiers : controllers, models et screens
+| | | │ ├── authentication/ 
 | | | | │ ├── controllers/
 | | | | │ ├── models/
 | | | | │ └── screens/
@@ -52,18 +54,20 @@ US#3 : Détail d'une activité |  <ul><li>- [x] Cette page est composée de : un
 US#4 : Le panier |  <ul><li>- [x] Au clic sur le bouton "Panier", la liste des activités du panier de l'utilisateur est affichée</li><li>- [x] Les informations par activité : Une image, un titre, le lieu, le prix</li><li>- [x] Un total général est affiché à l'utilisateur</li><li>- [x] A droite de chaque activité : Une croix pour retirer le produit</li><li>- [x] Au clic, le produit est retiré de la liste et le total est mis à jour</li><li>- [x] Aucun autre bouton n'est présent sur cette page</li></ul> | :heavy_check_mark:| :heavy_check_mark:
 US#5 : Profil utilisateur | <ul><li>- [x] Au clic sur le bouton « Profil », les informations de l’utilisateur s’affichent</li><li>- [x] Les informations : Le Login ( readonly), le password (obfusqué), l'anniversaire, l'adresse, le code postal, la ville</li><li>- [x] Un bouton "valider" pour sauvegarder les données (en BDD)</li><li>- [x] Un bouton "Se déconnecter" pour revenir à la page de Login</li></ul> | :heavy_check_mark:| :heavy_check_mark:
 US#6 : Filtrer sur la liste des activités | <ul><li>- [x] Sur la page « Activités », une TabBar est présente, listant les différentes catégories d’activités</li><li>- [x] Par défaut, l’entrée « Toutes » est sélectionnée et toutes les activités sont affichés</li><li>- [x] Au clic sur une des entrées, la liste est filtrée pour afficher seulement les activités correspondantes à la catégorie sélectionnée</li></ul> | :x: | :heavy_check_mark: 
+US#7 : Feature supplémentaire : ajouter des notifications | <ul><li>- [x] Sur la page « détail d'une activité », lors d'un clic pour l'ajout d'une activité au panier : 2 snackbars :<ul><li> "votre activité a été ajouté au panier !" -> redirige vers la liste des activités</li><li>"Vous avez déjà ajouté cette activité au panier"</li></ul></li><li>- [x] sur la page de connexion il y a une snackbar : "Vos indentifiants sont incorrects, veuillez réessayer"</li><li>- [x] Sur la page du panier : lors de la suppression d'une activité : 1 snackbar orange : "Activité supprimée du panier"</li><li>- [x] Sur la page "profil" : 1 snackbar lors de la validation : "Vos données ont été enregistrées"</li></ul> | :x: | :heavy_check_mark: 
+
 
 ## Développement
 
 ### Installation des dépendances 
-Pour installer les dépendances du projet, exécutez la commande suivante dans le répertoire frontend du projet :
+Pour installer les dépendances frontend, exécutez les commandes suivante :
 ```
 cd frontend
 ```
 ```
 flutter pub get
 ```
-Pour installer les dépendances du projet, exécutez la commande suivante dans le répertoire backend du projet :
+Pour installer les dépendances backend, exécutez les commandes suivante :
 ```
 cd backend
 ```

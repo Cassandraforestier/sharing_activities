@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/src/common_widgets/bottom_nav_bar.dart';
+import 'package:sharing_ativities/src/common_widgets/bottom_nav_bar.dart';
 import '../models/cart_model_page.dart';
 import '../services/cart_service.dart';
 

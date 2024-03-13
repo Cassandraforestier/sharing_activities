@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'package:flutter_application_1/src/features/cart/models/cart_model_page.dart';
+import 'package:sharing_ativities/src/features/cart/models/cart_model_page.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:http/http.dart' as http;
 

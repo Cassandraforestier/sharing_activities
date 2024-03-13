@@ -1,7 +1,7 @@
 import 'dart:convert';
-import 'package:flutter_application_1/src/features/activity/screens/activities_page.dart';
+import 'package:sharing_ativities/src/features/activity/screens/activities_page.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/src/features/cart/models/cart_model_page.dart';
+import 'package:sharing_ativities/src/features/cart/models/cart_model_page.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:http/http.dart' as http;
 import '../../../common_widgets/bottom_nav_bar.dart';

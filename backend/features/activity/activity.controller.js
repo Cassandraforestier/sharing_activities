@@ -1,6 +1,5 @@
 const Activity = require("./activity.model");
 
-// Contrôleur pour obtenir toutes les activités
 const getAllActivities = async (req, res) => {
   try {
     const activities = await Activity.find();
@@ -10,7 +9,6 @@ const getAllActivities = async (req, res) => {
   }
 };
 
-//filtrer les activités par catégorie
 const getActivitiesByCategory = async (req, res) => {
   try {
     if (req.params.category === "toutes") {
@@ -28,7 +26,6 @@ const getActivitiesByCategory = async (req, res) => {
   }
 };
 
-// Contrôleur pour obtenir les détails d'une activité par ID
 const getActivityById = async (req, res) => {
   try {
     const activity = await Activity.findById(req.params.activityId);
@@ -40,8 +37,6 @@ const getActivityById = async (req, res) => {
     res.status(500).json({ message: "Internal server error" });
   }
 };
-
-// Autres contrôleurs peuvent être ajoutés selon vos besoins (ajout, suppression, mise à jour, etc.)
 
 module.exports = {
   getAllActivities,

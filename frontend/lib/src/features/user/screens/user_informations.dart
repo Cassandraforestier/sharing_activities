@@ -2,8 +2,8 @@ import 'dart:convert';
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_application_1/src/common_widgets/bottom_nav_bar.dart';
-import 'package:flutter_application_1/src/features/authentication/screens/login_page.dart';
+import 'package:sharing_ativities/src/common_widgets/bottom_nav_bar.dart';
+import 'package:sharing_ativities/src/features/authentication/screens/login_page.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
@@ -94,14 +94,12 @@ class _ProfilePageState extends State<ProfilePage> {
     }
   }
 
-  // Fonction pour formater la date
   String? _formatDate(String? date) {
     if (date == null) return null;
     DateTime parsedDate = DateTime.parse(date);
     return DateFormat('dd/MM/yyyy').format(parsedDate);
   }
 
-  // Fonction pour renvoyer la date au bon format
   String _formatDateForBackend(String date) {
     DateTime parsedDate = DateFormat('dd/MM/yyyy').parse(date);
     return DateFormat('yyyy-MM-dd').format(parsedDate);

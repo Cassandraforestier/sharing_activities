@@ -1,4 +1,4 @@
-# flutter_application_1
+# sharing_ativities
 
 A new Flutter project.
 

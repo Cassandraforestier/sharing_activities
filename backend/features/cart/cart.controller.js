@@ -15,14 +15,11 @@ const getCartById = async (req, res) => {
             const savedCart = await newCart.save();
             return res.status(200).json(savedCart);
         }
-
-        // Calculate total price
         const total = cart.activityList.reduce((acc, activity) => {
             return acc + activity.price;
         }, 0);
 
         cart.totalPrice = total;
-        // await cart.save();
 
         res.status(200).json(cart);
     } catch (error) {
@@ -30,8 +27,6 @@ const getCartById = async (req, res) => {
     }
 };
 
-
-// contrôleur pour ajouter une activité à la carte
 const addActivityToCart = async (req, res) => {
     try {
         const cart = await Cart.findById(req.params.cartId);
@@ -49,7 +44,6 @@ const addActivityToCart = async (req, res) => {
     }
 };
 
-// contrôleur pour supprimer une activité de la carte
 const deleteActivityFromCart = async (req, res) => {
     try {
         const cart = await Cart.findById(req.params.cartId);

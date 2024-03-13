@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/src/common_widgets/bottom_nav_bar.dart';
-import 'package:flutter_application_1/src/features/activity/controllers/activities_controller.dart';
-import 'package:flutter_application_1/src/features/activity/screens/activity_detail_page.dart';
-import 'package:flutter_application_1/src/features/cart/models/cart_model_page.dart';
+import 'package:sharing_ativities/src/common_widgets/bottom_nav_bar.dart';
+import 'package:sharing_ativities/src/features/activity/controllers/activities_controller.dart';
+import 'package:sharing_ativities/src/features/activity/screens/activity_detail_page.dart';
+import 'package:sharing_ativities/src/features/cart/models/cart_model_page.dart';
 
 class ActivitiesPage extends StatefulWidget {
   @override

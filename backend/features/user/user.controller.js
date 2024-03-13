@@ -1,8 +1,6 @@
-// Import necessary modules and dependencies
 const { modelNames } = require("mongoose");
 const User = require("./user.model");
 
-// Controller function to read user information
 const getUser = async (req, res) => {
   try {
     const userId = req.params.id;

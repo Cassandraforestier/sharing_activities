@@ -1,5 +1,5 @@
-name: flutter_application_1
-description: "A new Flutter project."
+name: sharing_ativities
+description: "Sharing Activities est une application qui permet de découvrir et participer à des activités de groupe."
 publish_to: "none"
 
 version: 1.0.0+1
@@ -27,4 +27,4 @@ flutter:
   assets:
     - assets/
     - assets/images/
-    - .env
+    - assets/.env
